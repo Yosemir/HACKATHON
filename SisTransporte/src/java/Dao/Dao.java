@@ -10,7 +10,7 @@ public class Dao {
 
     public void conexion() throws Exception {
         try {
-            Class.forName("com.sqlserver.jdbc.SQLServerDriver");
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             cn = DriverManager.getConnection("sql:server://localhost:1433;database=SisTransporte","root","vallegrande2018");
             System.out.println("Conexión");
         } catch (Exception e) {
